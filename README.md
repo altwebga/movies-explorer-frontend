@@ -26,5 +26,6 @@ npm run start
 
 ## Для ревью
 
+Ссылка на макет: https://disk.yandex.ru/d/eKCzVLb_b3HsWw
 Ссылка на ветку: https://github.com/altwebga/movies-explorer-frontend/tree/level-2  
 Pull requests: https://github.com/altwebga/movies-explorer-frontend/pull/8  
