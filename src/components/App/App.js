@@ -4,6 +4,7 @@ import NotFound from '../NotFound/NotFound';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Login from '../Login/Login';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           </>
         }>
         </Route>
-
+        <Route path= '/signin' element={<Login />}></Route>
         <Route path='/*' element={<NotFound />}></Route>
 
       </Routes>
