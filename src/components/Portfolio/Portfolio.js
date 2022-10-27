@@ -22,7 +22,7 @@ const Portfolio = () => {
 
           <a
             className='portfolio__list-item-text'
-            href='https://github.com/altwebga/how-to-learn'
+            href='https://github.com/altwebga/russian-travel'
             target="_blank"
             rel="noreferrer"
           >
@@ -32,7 +32,7 @@ const Portfolio = () => {
 
           <a
             className='portfolio__list-item-text'
-            href='https://github.com/altwebga/how-to-learn'
+            href='https://github.com/altwebga/react-mesto-api-full'
             target="_blank"
             rel="noreferrer"
           >
