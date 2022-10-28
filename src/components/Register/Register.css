@@ -24,13 +24,12 @@
   outline: none;
 }
 
-
 .input__element-border {
   margin-bottom: 97px;
 }
 
 .input__error {
-  color: #ee3465;
+  color: #ff4062;
 }
 
 @media screen and (max-width: 768px) {
