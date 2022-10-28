@@ -20,7 +20,7 @@
 }
 
 .input__element:focus {
-  border-bottom: 1px solid #2be080;
+  border-bottom: 1px solid #000;
   outline: none;
 }
 

@@ -34,7 +34,7 @@
 }
 
 .header__link-element:nth-of-type(2) {
-  background-color: #2be080;
+  background-color: #000;
 }
 
 @media screen and (max-width: 900px) {
