@@ -17,7 +17,6 @@ const AboutMe = () => {
 и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
             <nav className='about-me__info-text__nav'>
               <a className='about-me__info-text__nav-element' href='https://github.com/altwebga' target="_blank" rel="noreferrer">Github</a>
-              <a className='about-me__info-text__nav-element' href='https://ru-ru.facebook.com' target="_blank" rel="noreferrer">Facebook</a>
             </nav>
           </div>
         <div className='about-me__info-foto'>

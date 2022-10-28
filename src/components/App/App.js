@@ -5,6 +5,7 @@ import Main from '../Main/Main';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
+import Register from '../Register/Register';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           </>
         }>
         </Route>
+        <Route path= '/signup' element={<Register />}></Route>
         <Route path= '/signin' element={<Login />}></Route>
         <Route path='/*' element={<NotFound />}></Route>
 
