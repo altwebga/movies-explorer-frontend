@@ -9,17 +9,17 @@ import Menu from '../Menu/Menu';
 import MenuBtn from '../MenuBtn/MenuBtn';
 
 function Header() {
-const location = useLocation();
+  const location = useLocation();
 
-const [width, setWidth] = useState(window.innerWidth)
-const breakpoint = 768
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 768
 
-useEffect(() => {
-  const handleResizeWindow = () => setWidth(window.innerWidth)
-  window.addEventListener('resize', handleResizeWindow)
-  return () => {
-    window.removeEventListener('resize', handleResizeWindow)
-  }
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth)
+    window.addEventListener('resize', handleResizeWindow)
+    return () => {
+      window.removeEventListener('resize', handleResizeWindow)
+    }
   }, [])
 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
@@ -92,16 +92,16 @@ useEffect(() => {
 
       {location.pathname === "/" && (
 
-      <nav className='header__link'>
+        <nav className='header__link'>
           <Link className='header__link-element' to='/signup'>Регистрация</Link >
           <Link className='header__link-element' to='/signin'>Войти</Link >
-      </nav>
+        </nav>
       )}
 
       {location.pathname === '/movies' && (
         <>
-      <Navigation />
-      <Account />
+          <Navigation />
+          <Account />
         </>
       )}
 
