@@ -1,0 +1,60 @@
+.movies-card {
+  min-width: 364px;
+  background: #fdfdfd;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movies-card__img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.movies-card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 12px;
+}
+
+.movies-card__content-text-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.movies-card__content-text-duration {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #a0a0a0;
+}
+
+.movies-card__content-btn-like {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 12px;
+  cursor: pointer;
+  background-image: url(../../images/icon-heart-light.svg);
+}
+
+.movies-card__content-btn-like:checked {
+  background: #f4f4f4;
+}
+
+.movies-card__content-btn-like::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 12px;
+}
+
+.movies-card__content-btn-like:checked:before {
+  background-image: url(../../images/icon-heart-solid.svg);
+}

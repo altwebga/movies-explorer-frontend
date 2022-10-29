@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import Profile from '../Profile/Profile';
+import Movies from '../Movies/Movies';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/movies' element={
           <>
             <Header />
+            <Movies />
             <Footer />
           </>
         }>
