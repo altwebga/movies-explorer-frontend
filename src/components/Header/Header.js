@@ -22,14 +22,14 @@ function Header() {
     }
   }, [])
 
-  const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  function handleClickBurgerMenu() {
-    setIsBurgerMenuOpen(!isBurgerMenuOpen)
+  function handleClickMobileMenu() {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
-  function handleCloseBurgerMenu() {
-    setIsBurgerMenuOpen(false)
+  function handleCloseMobileMenu() {
+    setIsMobileMenuOpen(false)
   }
 
   if (width < breakpoint) {
@@ -48,13 +48,13 @@ function Header() {
         {location.pathname === '/movies' && (
           <>
             <MenuBtn
-              isOpen={isBurgerMenuOpen}
-              handleClick={handleClickBurgerMenu}
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
             />
             <Menu
-              isOpen={isBurgerMenuOpen}
-              handleClick={handleClickBurgerMenu}
-              onClose={handleCloseBurgerMenu}
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
+              onClose={handleCloseMobileMenu}
             />
           </>
         )}
@@ -62,13 +62,13 @@ function Header() {
         {location.pathname === '/saved-movies' && (
           <>
             <MenuBtn
-              isOpen={isBurgerMenuOpen}
-              handleClick={handleClickBurgerMenu}
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
             />
             <Menu
-              isOpen={isBurgerMenuOpen}
-              handleClick={handleClickBurgerMenu}
-              onClose={handleCloseBurgerMenu}
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
+              onClose={handleCloseMobileMenu}
             />
           </>
         )}
@@ -76,8 +76,8 @@ function Header() {
         {location.pathname === '/profile' && (
           <>
             <MenuBtn
-              isOpen={isBurgerMenuOpen}
-              handleClick={handleClickBurgerMenu}
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
             />
             <Menu />
           </>
