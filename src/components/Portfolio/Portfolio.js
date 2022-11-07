@@ -14,7 +14,7 @@ const Portfolio = () => {
             className='portfolio__list-item-text'
             href='https://github.com/altwebga/how-to-learn'
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <p className='portfolio__list-item-text-p'>Статичный сайт</p>
             <span className="portfolio__list-item-span">↗</span>
@@ -24,7 +24,7 @@ const Portfolio = () => {
             className='portfolio__list-item-text'
             href='https://github.com/altwebga/russian-travel'
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <p className='portfolio__list-item-text-p'>Адаптивный сайт</p>
             <span className="portfolio__list-item-span">↗</span>
@@ -34,7 +34,7 @@ const Portfolio = () => {
             className='portfolio__list-item-text'
             href='https://github.com/altwebga/react-mesto-api-full'
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <p className='portfolio__list-item-text-p'>Одностраничное приложение</p>
             <span className="portfolio__list-item-span">↗</span>
