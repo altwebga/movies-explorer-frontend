@@ -14,14 +14,14 @@ const AboutMe = () => {
             <h2 className='about-me__info-text__name'>Виталий</h2>
             <p className='about-me__info-text__job'>Фронтенд-разработчик 30 лет</p>
             <p className='about-me__info-text__text'>Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена
-и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
+              и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
             <nav className='about-me__info-text__nav'>
-              <a className='about-me__info-text__nav-element' href='https://github.com/altwebga' target="_blank" rel="noreferrer">Github</a>
+              <a className='about-me__info-text__nav-element' href='https://github.com/altwebga' target="_blank" rel="noopener noreferrer">Github</a>
             </nav>
           </div>
-        <div className='about-me__info-foto'>
+          <div className='about-me__info-foto'>
             <img className='about-me__info-foto__foto' src={foto} alt='фото портфолио' />
-        </div>
+          </div>
         </div>
       </div>
       <Portfolio />
