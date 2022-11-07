@@ -63,7 +63,7 @@
 
 .profile__content-btn__edit-btn:hover {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.8;
   transition: opacity linear 0.5s;
 }
 
@@ -78,7 +78,7 @@
 
 .profile__content-btn__exit-btn:hover {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.8;
   transition: opacity linear 0.5s;
 }
 

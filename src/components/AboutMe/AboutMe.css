@@ -67,7 +67,7 @@
 }
 
 .about-me__info-text__nav-element:hover {
-  opacity: 0.3;
+  opacity: 0.8;
   transition: opacity linear 0.3s;
 }
 
