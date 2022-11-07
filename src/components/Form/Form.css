@@ -45,7 +45,7 @@
 
 .form-btn__item:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity linear 0.3s;
 }
 
@@ -69,8 +69,8 @@
 
 .form-btn__item-path:hover {
   cursor: pointer;
-  color: #000000;
-  opacity: 0.5;
+  color: #000;
+  opacity: 0.3;
   transition: opacity linear 0.3s;
 }
 

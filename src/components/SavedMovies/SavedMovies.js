@@ -8,7 +8,6 @@ const SavedMovies = () => {
     <section className='save-movies'>
       <SearchForm />
       <MoviesCardList />
-      <div className='save-movies_box'></div>
     </section>
   )
 }

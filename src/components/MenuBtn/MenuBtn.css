@@ -14,7 +14,7 @@
 }
 
 .menu__btn:hover {
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity linear 0.5s;
 }
 

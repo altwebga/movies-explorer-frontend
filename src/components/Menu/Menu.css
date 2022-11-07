@@ -48,7 +48,7 @@
   border: none;
 }
 .menu-btn:hover {
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity linear 0.5s;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .navigate__menu-link:hover {
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity linear 0.5s;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -82,7 +82,7 @@
 }
 .menu__acc:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity linear 0.5s;
 }
 

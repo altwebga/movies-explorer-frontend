@@ -79,7 +79,11 @@ function Header() {
               isOpen={isMobileMenuOpen}
               handleClick={handleClickMobileMenu}
             />
-            <Menu />
+            <Menu
+              isOpen={isMobileMenuOpen}
+              handleClick={handleClickMobileMenu}
+              onClose={handleCloseMobileMenu}
+            />
           </>
         )}
       </section>
