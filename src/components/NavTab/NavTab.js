@@ -1,12 +1,10 @@
-import React from 'react';
-import './NavTab.css';
+import React from "react";
+import "./NavTab.css";
 
 const NavTab = () => {
   return (
-    <section className='nav'>
-
+    <section className="nav">
       <ul className="nav__list">
-
         <li className="nav__list-item">
           <a className="nav__link" href="#about-project">
             О проекте
@@ -24,11 +22,9 @@ const NavTab = () => {
             Студент
           </a>
         </li>
-
       </ul>
-
     </section>
-  )
-}
+  );
+};
 
 export default NavTab;

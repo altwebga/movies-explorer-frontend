@@ -7,14 +7,13 @@
   justify-content: flex-end;
 }
 
-.navigate__link{
+.navigate__link {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   color: #000;
   transition: opacity linear 0.3s;
-
 }
 
 .navigate__link:hover {

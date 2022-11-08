@@ -1,12 +1,11 @@
-import React from 'react';
-import './MoviesCardList.css';
-import MoviesCard from '../MoviesCard/MoviesCard';
-import Preloader from '../Preloader/Preloader'
+import React from "react";
+import "./MoviesCardList.css";
+import MoviesCard from "../MoviesCard/MoviesCard";
+import Preloader from "../Preloader/Preloader";
 
 function MoviesCardList() {
   return (
-    <section className='movies-list'>
-
+    <section className="movies-list">
       <MoviesCard />
       <MoviesCard />
       <MoviesCard />
@@ -19,9 +18,8 @@ function MoviesCardList() {
       <MoviesCard />
       <MoviesCard />
       <Preloader />
-
     </section>
-  )
+  );
 }
 
 export default MoviesCardList;
