@@ -60,12 +60,9 @@ function Menu({ isOpen, handleClick, onClose }) {
             Сохраненные фильмы
           </Link>
         </nav>
-
-        <div className='menu__acc'>
-          <p className='menu__acc-text'>Аккаунт</p>
-          <svg className='menu__acc-img'></svg>
-        </div>
-
+        <Link className='navigate__menu-link' to='/profile'>
+          <button className='menu__btn-account'>Аккаунт <svg className='menu__btn-account-img'></svg></button>
+        </Link>
       </div>
     </>
 

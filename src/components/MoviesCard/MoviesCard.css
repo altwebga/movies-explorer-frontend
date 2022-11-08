@@ -5,14 +5,15 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  box-shadow: none;
-  transition: box-shadow linear 0.5s;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  transition: box-shadow linear 0.3s;
 }
 
 .movies-card:hover {
   cursor: pointer;
-  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-  10px 10px 15px rgba(70,70,70,0.12);
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
 }
 
 .movies-card__img {
@@ -24,7 +25,7 @@
 .movies-card__content {
   display: flex;
   justify-content: space-between;
-  padding: 14px 12px;
+  padding: 16px;
 }
 
 .movies-card__content-text-title {
@@ -42,7 +43,6 @@
 }
 
 .movies-card__content-btn-like {
-
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

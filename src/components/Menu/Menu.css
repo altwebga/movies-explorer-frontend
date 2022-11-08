@@ -73,35 +73,27 @@
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.menu__acc {
+.menu__btn-account {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 7px;
-  height: 32px;
-}
-.menu__acc:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  transition: opacity linear 0.5s;
-}
-
-.menu__acc-text {
   font-size: 13px;
   font-weight: 500;
   line-height: 12px;
   margin: 0;
-  padding-left: 11px;
+  background: none;
+  border: none;
+  gap: 17px;
 }
 
-.menu__acc-img {
+.menu__btn-account-img {
   background-image: url(../../images/icon-user.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   width: 26px;
-  height: 26px;
-  border-radius: 50px;
+  height: 30px;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 450px) {

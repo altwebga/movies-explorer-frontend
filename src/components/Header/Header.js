@@ -6,13 +6,13 @@ import Logo from '../../images/logo.svg';
 import Navigation from '../Navigation/Navigation';
 import Account from '../Account/Account';
 import Menu from '../Menu/Menu';
-import MenuBtn from '../MenuBtn/MenuBtn';
+import MenuBtnMobile from '../MenuBtnMobile/MenuBtnMobile';
 
 function Header() {
   const location = useLocation();
 
   const [width, setWidth] = useState(window.innerWidth)
-  const breakpoint = 768
+  const breakpoint = 769
 
   useEffect(() => {
     const handleResizeWindow = () => setWidth(window.innerWidth)
@@ -47,7 +47,7 @@ function Header() {
 
         {location.pathname === '/movies' && (
           <>
-            <MenuBtn
+            <MenuBtnMobile
               isOpen={isMobileMenuOpen}
               handleClick={handleClickMobileMenu}
             />
@@ -61,7 +61,7 @@ function Header() {
 
         {location.pathname === '/saved-movies' && (
           <>
-            <MenuBtn
+            <MenuBtnMobile
               isOpen={isMobileMenuOpen}
               handleClick={handleClickMobileMenu}
             />
@@ -75,7 +75,7 @@ function Header() {
 
         {location.pathname === '/profile' && (
           <>
-            <MenuBtn
+            <MenuBtnMobile
               isOpen={isMobileMenuOpen}
               handleClick={handleClickMobileMenu}
             />
