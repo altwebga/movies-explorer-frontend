@@ -9,7 +9,6 @@ const MoviesCard = () => {
     setLike(!isLike);
   };
   return (
-    <>
       <li className="movies-card">
         <img
           className="movies-card__img"
@@ -24,7 +23,6 @@ const MoviesCard = () => {
           <button className={isLike ? "movies-card__content-btn-like" : "movies-card__content-btn-like-active"} onClick={handleToggle}></button>
         </div>
       </li>
-    </>
   );
 };
 
