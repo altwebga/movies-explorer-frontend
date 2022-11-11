@@ -34,9 +34,10 @@ function Header() {
 
   if (width < breakpoint) {
     return (
-      <section className="header">
-        <img className="header__logo" src={Logo} alt="Лого" />
-
+      <header className="header">
+        <Link className="header__logo" to="/">
+        <img src={Logo} alt="Лого" />
+        </Link>
         {location.pathname === "/" && (
           <nav className="header__link">
             <Link className="header__link-element" to="/signup">
@@ -89,13 +90,15 @@ function Header() {
             />
           </>
         )}
-      </section>
+      </header>
     );
   }
 
   return (
-    <section className="header">
-      <img className="header__logo" src={Logo} alt="Лого" />
+    <header className="header">
+        <Link className="header__logo" to="/">
+        <img src={Logo} alt="Лого" />
+        </Link>
 
       {location.pathname === "/" && (
         <nav className="header__link">
@@ -128,7 +131,7 @@ function Header() {
           <Account />
         </>
       )}
-    </section>
+    </header>
   );
 }
 

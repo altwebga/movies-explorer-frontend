@@ -7,12 +7,12 @@ import AboutMe from "../AboutMe/AboutMe";
 
 const Main = () => {
   return (
-    <section className="main">
+    <main className="main">
       <Promo />
       <AboutProject />
       <Techs />
       <AboutMe />
-    </section>
+    </main>
   );
 };
 
