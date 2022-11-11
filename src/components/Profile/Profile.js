@@ -3,7 +3,7 @@ import "./Profile.css";
 
 const Profile = () => {
   return (
-    <section className="profile">
+    <main className="profile">
       <div className="profile__content">
         <h3 className="profile__content-hello">Привет, Виталий!</h3>
         <form className="profile__content-user">
@@ -40,7 +40,7 @@ const Profile = () => {
           </button>
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

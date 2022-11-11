@@ -5,7 +5,7 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 const Movies = () => {
   return (
-    <section className="movies">
+    <main className="movies">
       <SearchForm />
       <MoviesCardList />
       <div className="btn-content">
@@ -13,7 +13,7 @@ const Movies = () => {
           Ещё
         </button>
       </div>
-    </section>
+    </main>
   );
 };
 

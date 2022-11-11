@@ -5,10 +5,10 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 const SavedMovies = () => {
   return (
-    <section className="save-movies">
+    <main className="save-movies">
       <SearchForm />
       <MoviesCardList />
-    </section>
+    </main>
   );
 };
 

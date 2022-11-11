@@ -43,26 +43,22 @@
 }
 
 .movies-card__content-btn-like {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 12px;
-  cursor: pointer;
-  background-image: url(../../images/icon-heart-light.svg);
+   background-image: url(../../images/icon-heart-light.svg);
+   border: none;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   background-repeat: no-repeat;
 }
-
-.movies-card__content-btn-like:checked {
-  background: #f4f4f4;
-}
-
-.movies-card__content-btn-like::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 12px;
-}
-
-.movies-card__content-btn-like:checked:before {
+.movies-card__content-btn-like-active {
   background-image: url(../../images/icon-heart-solid.svg);
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.movies-card__content-btn-like-active:hover {
+  background-image: url(../../images/icon-del-like.svg);
 }
