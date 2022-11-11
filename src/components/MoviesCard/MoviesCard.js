@@ -4,7 +4,7 @@ import imageCard from "../../images/image-card.jpg";
 
 const MoviesCard = () => {
   return (
-    <div className="movies-card">
+    <li className="movies-card">
       <img
         className="movies-card__img"
         alt="изображение фильма"
@@ -17,7 +17,7 @@ const MoviesCard = () => {
         </div>
         <input type="checkbox" className="movies-card__content-btn-like" />
       </div>
-    </div>
+    </li>
   );
 };
 
