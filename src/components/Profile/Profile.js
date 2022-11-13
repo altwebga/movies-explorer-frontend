@@ -32,10 +32,10 @@ const Profile = () => {
           </label>
         </form>
         <div className="profile__content-btn">
-          <button className="profile__content-btn__edit-btn">
+          <button type="button" className="profile__content-btn__edit-btn">
             Редактировать
           </button>
-          <button className="profile__content-btn__exit-btn">
+          <button type="button" className="profile__content-btn__exit-btn">
             Выйти из аккаунта
           </button>
         </div>

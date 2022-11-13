@@ -20,7 +20,7 @@ const MoviesCard = () => {
             <h3 className="movies-card__content-text-title">Бег это свобода</h3>
             <p className="movies-card__content-text-duration">1ч 44м</p>
           </div>
-          <button className={isLike ? "movies-card__content-btn-like" : "movies-card__content-btn-like-active"} onClick={handleToggle}></button>
+          <button type="button" className={isLike ? "movies-card__content-btn-like" : "movies-card__content-btn-like-active"} onClick={handleToggle}></button>
         </div>
       </li>
   );
