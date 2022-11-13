@@ -1,6 +1,9 @@
 .form {
+  display: flex;
+  height: 100vh;
   max-width: 396px;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 .form-up {
@@ -29,6 +32,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  bottom: 70px;
 }
 
 .form-btn__item {
