@@ -4,7 +4,7 @@ export default function reqResponse(res) {
   if (res.ok) {
     return res.json()
   }
-  return Promise.reject(`Все сломалось${res.status}`)
+  return Promise.reject(`Ошибка ${res.status}`)
 }
 
 
