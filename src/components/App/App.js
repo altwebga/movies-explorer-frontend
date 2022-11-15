@@ -39,6 +39,20 @@ function App() {
     loggedIn && handleGetUser();
   }, [loggedIn]);
 
+  // получение фильмов пользователя
+  useEffect(() => {
+    const token = localStorage.getItem("jwt");
+    if (token) {
+      MainApi.getSavedMovies()
+        .then((data) => {
+          setSavedMovies(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [currentUser]);
+
   function handleTokenCheck() {
     const jwt = localStorage.getItem("jwt");
 
@@ -69,7 +83,7 @@ function App() {
         }
       })
       .catch((err) => {
-        setErrorMessage("При авторизации произошла ошибка");
+        setErrorMessage("Ошибка авторизации");
         console.log(err);
       });
   }
@@ -82,7 +96,7 @@ function App() {
         setErrorMessage("Регистрация прошла успешно!");
       })
       .catch((err) => {
-        setErrorMessage("При регистрации произошла ошибка");
+        setErrorMessage("Ошибка регистрации");
         console.log(err);
       });
   };
@@ -92,6 +106,43 @@ function App() {
     navigate("/");
   }
 
+  //сохранение фильмов
+  const handleSaveMovie = (movie) => {
+    const newMovie = {
+      country: movie.country || "unknown",
+      director: movie.director || "unknown",
+      duration: movie.duration,
+      year: movie.year || "no data",
+      description: movie.description || "no data",
+      image: movie.image,
+      trailerLink: movie.trailerLink,
+      thumbnail: movie.thumbnail,
+      movieId: movie.id,
+      nameRU: movie.nameRU || "no name",
+      nameEN: movie.nameEN || "no name",
+    };
+
+    MainApi.saveMovie(newMovie)
+      .then((newMovie) => {
+        setSavedMovies([newMovie, ...savedMovies]);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {});
+  };
+
+  //удаление фильма из cохраненных фильмов
+  const handleDeleteMovie = (movie) => {
+    MainApi.deleteMovie(movie._id)
+      .then(() => {
+        setSavedMovies((movies) => movies.filter((m) => m._id !== movie._id));
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   // обновлене данных пользователя
   function handleChangeProfile(userData) {
     MainApi.setUpdateUserInfo(userData.name, userData.email)
@@ -100,7 +151,7 @@ function App() {
         setErrorMessage("Данные успешно обновлены!");
       })
       .catch((err) => {
-        setErrorMessage("При обновлении данных произошла ошибка");
+        setErrorMessage("Ошибка обновления данных");
         console.log(err);
       });
   }
@@ -146,7 +197,11 @@ function App() {
               element={
                 <>
                   <Header />
-                  <Movies />
+                  <Movies
+                    onSave={handleSaveMovie}
+                    onDelete={handleDeleteMovie}
+                    moviesCardList={savedMovies}
+                  />
                   <Footer />
                 </>
               }
@@ -157,7 +212,10 @@ function App() {
               element={
                 <>
                   <Header />
-                  <SavedMovies />
+                  <SavedMovies
+                    onDelete={handleDeleteMovie}
+                    moviesCardList={savedMovies}
+                  />
                   <Footer />
                 </>
               }

@@ -21,7 +21,7 @@ export const register = ({ name, email, password }) => {
 };
 
 
-export const authorization = ({ email, password }) => {
+export const authorization = ({email, password}) => {
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
@@ -29,8 +29,8 @@ export const authorization = ({ email, password }) => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      email: email,
-      password: password
+      email:email,
+      password:password
     })
   })
     .then(reqResponse)

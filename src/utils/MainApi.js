@@ -34,3 +34,39 @@ export function setUpdateUserInfo(name, email) {
   })
     .then(reqResponse)
 }
+
+export function getSavedMovies() {
+  const token = localStorage.getItem('jwt');
+  return fetch(`${BASE_URL}/movies`, {
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    },
+  })
+    .then(reqResponse);
+}
+
+export function saveMovie(data) {
+  const token = localStorage.getItem('jwt');
+  return fetch(`${BASE_URL}/movies`, {
+    method: 'POST',
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      'Authorization': `Bearer ${token}`
+    },
+    body: JSON.stringify(data)
+  })
+    .then(reqResponse)
+}
+
+export function deleteMovie(movieId) {
+  const token = localStorage.getItem('jwt');
+  return fetch(`${BASE_URL}/movies/${movieId}`, {
+    method: 'DELETE',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    },
+  })
+    .then(reqResponse);
+}
