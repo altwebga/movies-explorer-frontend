@@ -51,7 +51,6 @@ function SavedMovies({ moviesCardList, onDelete }) {
           isSaved={true}
         />
       )}
-      <div className="save-movies_box"> </div>
     </main>
   );
 }
