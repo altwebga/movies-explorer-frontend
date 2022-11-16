@@ -17,6 +17,7 @@
 }
 
 .movies-card__img {
+  height: 203px;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -40,25 +41,4 @@
   font-weight: 400;
   line-height: 13px;
   color: #a0a0a0;
-}
-
-.movies-card__content-btn-like {
-   background-image: url(../../images/icon-heart-light.svg);
-   border: none;
-   width: 30px;
-   height: 30px;
-   cursor: pointer;
-   background-repeat: no-repeat;
-}
-.movies-card__content-btn-like-active {
-  background-image: url(../../images/icon-heart-solid.svg);
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  background-repeat: no-repeat;
-}
-
-.movies-card__content-btn-like-active:hover {
-  background-image: url(../../images/icon-del-like.svg);
 }

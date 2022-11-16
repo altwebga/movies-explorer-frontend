@@ -30,6 +30,8 @@
   line-height: 17px;
   cursor: pointer;
   margin: 184px auto 60px;
+  border: none;
+  background: none;
 }
 
 @media screen and (max-width: 768px) {

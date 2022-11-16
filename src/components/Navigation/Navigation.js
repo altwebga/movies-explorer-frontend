@@ -1,6 +1,6 @@
-import React from 'react'
-import './Navigation.css'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import "./Navigation.css";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -8,7 +8,7 @@ function Navigation() {
       <>
         <NavLink
           className={({ isActive }) =>
-            isActive ? 'navigate__link_activ' : 'navigate__link'
+            isActive ? "navigate__link_active" : "navigate__link"
           }
           to="/movies"
         >
@@ -16,7 +16,7 @@ function Navigation() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? 'navigate__link_activ' : 'navigate__link'
+            isActive ? "navigate__link_active" : "navigate__link"
           }
           to="/saved-movies"
         >
@@ -24,7 +24,7 @@ function Navigation() {
         </NavLink>
       </>
     </nav>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;
