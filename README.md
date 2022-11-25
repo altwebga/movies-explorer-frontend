@@ -25,8 +25,10 @@ npm run start
 Если все прошло успешно, проект будет запущен на `http://localhost:3000`
 
 ## Для ревью
+Frontend: https://movies44.nomoredomains.icu  
+Backend: https://api.movies44.nomoredomains.icu  
 
 Ссылка на макет: https://disk.yandex.ru/d/eKCzVLb_b3HsWw  
 Figma: https://www.figma.com/file/zvBdUPqoIxUc2F5EjxzgHQ/Diploma-(Copy)?node-id=932%3A2618  
-Ссылка на ветку: https://github.com/altwebga/movies-explorer-frontend/tree/level-2  
-Pull requests: https://github.com/altwebga/movies-explorer-frontend/pull/8  
+Ссылка на ветку: https://github.com/altwebga/movies-explorer-frontend/tree/level-3  
+Pull requests: https://github.com/altwebga/movies-explorer-frontend/pull/9  
